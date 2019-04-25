@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Montserrat|Noto+Serif|Playfair+Display|Quicksand|Roboto|Rubik");
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Libre Baskerville', serif;
+*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav {
+  font-size: 1rem;
+}
+.logo_image {
+  border-radius: 50%;
+}
+.logo_title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 800;
+}
+.header_title {
+  padding-top: 22px;
+  padding-bottom: 15px;
+}
+.side_bar {
+  padding-top: 5%;
+}
+.side_bar_menu_item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.side_bar_menu_item > a:hover {
+  color: #9b0000;
+}
+.side_bar_menu_item + .side_bar_menu_item {
+  margin-top: 30px;
+}
+.side_bar_menu_item img {
+  margin-top: 20px;
+}
+/*=============================================
+=            MAIN            =
+=============================================*/
+.main-title {
+  font-family: "Dosis", sans-serif;
+  font-size: 3rem;
+}
+.main-description {
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  padding: 20px;
+}
+.main-description span {
+  color: white;
+}
+/*=====  End of MAIN  ======*/
+
+@media all and (max-width: 1199px) {
+}
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 575px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
