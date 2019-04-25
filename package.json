@@ -1,0 +1,23 @@
+{
+  "name": "kar_parts_site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyRusin/kar_parts_site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyRusin/kar_parts_site/issues"
+  },
+  "homepage": "https://github.com/AndreyRusin/kar_parts_site#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
