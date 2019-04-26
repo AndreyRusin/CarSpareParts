@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 nav {
   font-size: 1rem;
