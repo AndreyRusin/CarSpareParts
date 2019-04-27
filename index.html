@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
       rel="shortcut icon"
       href="img/favicon-16x16.png"
       type="image/x-icon"
       sizes="16x16"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
+
     <title>Автозапчасти на разные марки машин</title>
   </head>
   <body>
@@ -25,7 +29,7 @@
         <h1>АвтоЗапчасти</h1>
         <p>Найдите запчасть для своей машины</p>
       </div>
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -41,28 +45,33 @@
               height="70"
               src="img/logo.jpg"
               alt="Logo"
-          /></a>
-          <span style="font-size:2.4rem" class="navbar-text text-info"
-            >АвтоЗапчасти</span
+            /><span style="font-size:2.4rem" class="navbar-text text-info ml-3"
+              >АвтоЗапчасти</span
+            ></a
           >
+
           <ul style="padding-left: 25px" class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Двигатель</a>
+              <a href="dvigatel.html" class="nav-link text-light">Двигатель</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Кузов</a>
+              <a href="kuzov.html" class="nav-link text-light">Кузов</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Трансмиссия</a>
+              <a href="transmission.html" class="nav-link text-light"
+                >Трансмиссия</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Руль</a>
+              <a href="rule.html" class="nav-link text-light">Руль</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Оптика</a>
+              <a href="optika.html" class="nav-link text-light">Оптика</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Зажигание</a>
+              <a href="zazhiganie.html" class="nav-link text-light"
+                >Зажигание</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -74,11 +83,17 @@
                 <span class="caret"></span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                <a href="#" class="dropdown-item">Система охлаждения</a>
-                <a href="#" class="dropdown-item">Электроприборы</a>
-                <a href="#" class="dropdown-item">Выхлопная система</a>
-                <a href="#" class="dropdown-item">Система стеклочистки</a>
-                <a href="#" class="dropdown-item">Топливная система</a>
+                <a href="cold.html" class="dropdown-item">Система охлаждения</a>
+                <a href="elektro.html" class="dropdown-item">Электроприборы</a>
+                <a href="vihlop.html" class="dropdown-item"
+                  >Выхлопная система</a
+                >
+                <a href="steklo.html" class="dropdown-item"
+                  >Система стеклочистки</a
+                >
+                <a href="toplivo.html" class="dropdown-item"
+                  >Топливная система</a
+                >
               </div>
             </li>
           </ul>
@@ -90,7 +105,7 @@
       <div class="row">
         <div class="col-12 col-md-8">
           <h2 class="main-title text-danger text-center">
-            Из чего состоит машина
+            Из чего состоит машина?
           </h2>
           <img src="img/bg-header.png" alt="Red Ferrari" class="img-fluid" />
           <p class="main-description bg-light text-justify">
@@ -152,51 +167,577 @@
         </div>
       </div>
     </div>
-    
-    
-  
-    <div style="margin-top:40px">
-      <h1  style="margin-top:40px" class="info_block_title text-center text-danger">Как выглядят запчасти для машины?</h>
-      <div   style="margin-top:40px" class="row">
+    <!--MAIN BLOCK WITH CARDS-->
+    <div style="margin-top:40px" class="container-fluid">
+      <h1
+        style="margin-top:40px"
+        class="info_block_title text-center text-danger"
+      >
+        Как выглядят запчасти для машины?
+      </h1>
+      <div style="margin-top:40px" class="row">
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-          <div  class="card text-dark bg-light">
-            <img class="card-img-top " src="img/card-image-1.jpg" alt="Гидроусилитель">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-1.jpg"
+              alt="Гидроусилитель"
+            />
             <div class="card-body">
               <h4 class="card-title text-center card_title">Гидроусилитель</h4>
-              <a target="_blank" href="https://sochi.tiu.ru/Gidrousilitel-rulya.html" class="card_link btn align-center">Посмотреть</a>
+              <a
+                target="_blank"
+                href="https://sochi.tiu.ru/Gidrousilitel-rulya.html"
+                class="card_link btn"
+                >Посмотреть</a
+              >
             </div>
           </div>
-        </div><div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
           <div class="card text-dark bg-light">
-            <img class="card-img-top " src="img/card-image-2.jpg" alt="Рулевая рейка">
+            <img
+              class="card-img-top "
+              src="img/card-image-2.jpg"
+              alt="Рулевая рейка"
+            />
             <div class="card-body">
               <h4 class="card-title text-center card_title">Рулевая рейка</h4>
-              <a target="_blank" href="https://stodetaley.ru/?FranchiseeId=254217&utm_source=yandex&utm_medium=cpc&utm_campaign=sochisearchkzfr&utm_content=6005745429&utm_term=рейка%20рулевая%20цена&yclid=2188621751757081834" class="card_link btn align-center">Посмотреть</a>
+              <a
+                target="_blank"
+                href="https://stodetaley.ru/?FranchiseeId=254217&utm_source=yandex&utm_medium=cpc&utm_campaign=sochisearchkzfr&utm_content=6005745429&utm_term=рейка%20рулевая%20цена&yclid=2188621751757081834"
+                class="card_link btn "
+                >Посмотреть</a
+              >
             </div>
           </div>
-        </div><div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
           <div class="card text-dark bg-light">
-            <img class="card-img-top " src="img/card-image-3.jpg" alt="Стартер">
+            <img
+              class="card-img-top "
+              src="img/card-image-3.jpg"
+              alt="Стартер"
+            />
             <div class="card-body">
               <h4 class="card-title text-center card_title">Стартер</h4>
-              <a target="_blank" href="https://sochi.satom.ru/t/startery-i-komplektuyushchie-9105/" class="card_link btn align-center">Посмотреть</a>
+              <a
+                target="_blank"
+                href="https://sochi.satom.ru/t/startery-i-komplektuyushchie-9105/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
             </div>
           </div>
-        </div><div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-          <div  class="card text-dark bg-light">
-            <img  class="card-img-top " src="img/card-image-4.jpg" alt="Свечи зажигания">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-4.jpg"
+              alt="Свечи зажигания"
+            />
             <div class="card-body">
               <h4 class="card-title text-center card_title">Свечи зажигания</h4>
-              <a target="_blank" href="https://www.drive2.ru/b/4899916394579141271/" class="card_link btn align-center">Посмотреть</a>
+              <a
+                target="_blank"
+                href="https://www.drive2.ru/b/4899916394579141271/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-5.jpg"
+              alt="Амортизатор"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Амортизатор</h4>
+              <a
+                target="_blank"
+                href="http://vibro-opora.ru/?yclid=2207725402777214420"
+                class="card_link btn"
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-6.jpg"
+              alt="Поршневые кольца"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Поршневые кольца
+              </h4>
+              <a
+                target="_blank"
+                href="http://avtocity365.ru/ustrojstvo-i-ekspluatatsiya-avtomobilya/porshnevye-koltsa-dvigatelya-vnutrennego-sgoraniya/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-7.jpg"
+              alt="Масленый радиатор"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Масленый радиатор
+              </h4>
+              <a
+                target="_blank"
+                href="https://sochi.positronica.ru/catalog/maslyanyeradiatory/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-8.jpg"
+              alt="Глушитель"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Глушитель</h4>
+              <a
+                target="_blank"
+                href="http://доктор-выхлоп.рф/?yclid=2207747359712763184"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-9.jpg"
+              alt="Подушки двигателей"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Подушки двигателей
+              </h4>
+              <a
+                target="_blank"
+                href="https://sochi.zoon.ru/autoservice/type/zamena_podushki_dvigatelya/"
+                class="card_link btn"
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-10.jpg"
+              alt="Выключатель зажигания"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Выключатель зажигания
+              </h4>
+              <a
+                target="_blank"
+                href="https://avtolektron.ru/upravlyaemye-ustrojstva/vyiklyuchatel-zazhiganiya"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-11.jpg"
+              alt="Катушка зажигания"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Катушка зажигания
+              </h4>
+              <a
+                target="_blank"
+                href="https://autochainik.ru/princip-raboty-katushki-zazhiganiya.html"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-12.jpg"
+              alt="Гидроусилитель"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Бензонасос</h4>
+              <a
+                target="_blank"
+                href="https://sochi.tiu.ru/Benzonasos.html"
+                class="card_link btn"
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-13.jpg"
+              alt="Маховик"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Маховик</h4>
+              <a
+                target="_blank"
+                href="https://v-mireauto.ru/dlya-chego-nuzhen-maxovik-v-dvigatele/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-14.jpg"
+              alt="Блок управления двигателем"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Блок управления двигателем
+              </h4>
+              <a
+                target="_blank"
+                href="http://krutimotor.ru/bloki-upravleniya-dvigatelem-vidy-ustrojstvo-remont/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-15.jpg"
+              alt="Карданный вал"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Карданный вал</h4>
+              <a
+                target="_blank"
+                href="https://avtoexperts.ru/article/kardanny-j-val-ustrojstvo-e-kspluatatsiya/
+                "
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-16.jpg"
+              alt="Привод дверного замка"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Привод дверного замка
+              </h4>
+              <a
+                target="_blank"
+                href="https://golddveri.ru/furnitura/zamok/centralnyj-zamok.html"
+                class="card_link btn"
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-17.jpg"
+              alt="Сальники коленвала"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Сальники коленвала
+              </h4>
+              <a
+                target="_blank"
+                href="https://djago.ru/dvigatel/zamena-salnika-kolenvala/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-18.jpg"
+              alt="Коленвал"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">Коленвал</h4>
+              <a
+                target="_blank"
+                href="https://auto.ru/sochi/parts/kolenval/?from=wizard.parts&shipping=All&utm_campaign=parts&utm_medium=desktop&utm_source=parts_wizard&utm_term=Коленвал"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-19.jpg"
+              alt="Поперечный рычаг"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Поперечный рычаг
+              </h4>
+              <a
+                target="_blank"
+                href="https://motorsguide.ru/system/rychag-perednej-podveski"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-20.jpg"
+              alt="Компрессор кондиционера"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Компрессор кондиционера
+              </h4>
+              <a
+                target="_blank"
+                href="https://baza.drom.ru/sochi/sell_spare_parts/+/%EA%EE%EC%EF%F0%E5%F1%F1%EE%F0+%EA%EE%ED%E4%E8%F6%E8%EE%ED%E5%F0%E0/"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-21.jpg"
+              alt="Генератор переменного тока"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Генератор переменного тока
+              </h4>
+              <a
+                target="_blank"
+                href="http://www.autoscience.ru/blog/avtomobilnye_generatory_peremennogo_toka_i_princip_raboty/2014-11-30-58"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-22.jpg"
+              alt="Полуось"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Полуось
+              </h4>
+              <a
+                target="_blank"
+                href="https://auto.today/bok/5881-ustroystvo-i-prednaznachenie-poluosi-v-avto.html"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-23.jpg"
+              alt="Шаровая"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Шаровая
+              </h4>
+              <a
+                target="_blank"
+                href="http://avto-blogger.ru/podav/ustrojstvo-sharovoj-opory.html"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-24.jpg"
+              alt="Мотор вентилятора обдува салона"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Мотор вентилятора обдува салона
+              </h4>
+              <a
+                target="_blank"
+                href="https://autorambler.ru/bz/remont/amulet_electrics_41"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-25.jpg"
+              alt="Тормозной суппорт"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Тормозной суппорт
+              </h4>
+              <a
+                target="_blank"
+                href="https://etlib.ru/wiki/support-50"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-26.jpg"
+              alt="Тормозные диски"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Тормозные диски
+              </h4>
+              <a
+                target="_blank"
+                href="https://ddcar.ru/blog/poleznoe/kakie-tormoznye-diski-luchshe"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-27.jpg"
+              alt="Распределительный вал"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Распределительный вал
+              </h4>
+              <a
+                target="_blank"
+                href="https://auto-ru.ru/raspredelitelnyj-val.html"
+                class="card_link btn "
+                >Посмотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card text-dark bg-light">
+            <img
+              class="card-img-top "
+              src="img/card-image-28.jpg"
+              alt="Сцепление"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center card_title">
+                Сцепление
+              </h4>
+              <a
+                target="_blank"
+                href="https://tractorreview.ru/dvigateli/ustroystvo/stseplenie-ustroystvo-printsip-rabotyi.html"
+                class="card_link btn "
+                >Посмотреть</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-  
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <footer class="container-fluid bg-dark">
+      <a href="index.html" class="navbar-brand">
+        <img
+          class="logo_image"
+          width="70"
+          height="70"
+          src="img/logo.jpg"
+          alt="Logo"
+      /></a>
+      <div class="social_icons ml-auto text-center">
+        <i class="fab fa-vk social_icons_i"></i>
+        <i class="fab fa-instagram social_icons_i"></i>
+        <i class="fab fa-facebook-f social_icons_i"></i>
+        <p>Copyright &copy2019 СТО Сочи</p>
+      </div>
+    </footer>
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"

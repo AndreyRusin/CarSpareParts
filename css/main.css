@@ -19,6 +19,14 @@ a {
   text-transform: uppercase;
   cursor: pointer;
 }
+.card {
+  margin-top: 30px;
+  border: 2px rgb(36, 2, 26) solid;
+}
+a.card_link {
+  color: #9b0000;
+  width: 100%;
+}
 nav {
   font-size: 1rem;
 }
@@ -40,6 +48,9 @@ nav {
   text-decoration: none;
   font-size: 1.4rem;
 }
+blockquote {
+  font-size: 2rem;
+}
 .side_bar_menu_item > a:hover {
   color: #9b0000;
 }
@@ -47,6 +58,12 @@ nav {
   margin-top: 30px;
 }
 .side_bar_menu_item img {
+  margin-top: 20px;
+}
+.social_icons > i {
+  margin-left: 10px;
+}
+.social_icons {
   margin-top: 20px;
 }
 /*=============================================
@@ -64,17 +81,38 @@ nav {
 .main-description span {
   color: white;
 }
+
+footer {
+  display: flex;
+  margin-top: 100px;
+  color: white;
+  font-size: 1rem;
+  align-content: center;
+}
 /*=====  End of MAIN  ======*/
 
 @media all and (max-width: 1199px) {
+  blockquote {
+    font-size: 1.8rem;
+  }
 }
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 768px) {
+  blockquote {
+    font-size: 1.5rem;
+  }
 }
 @media all and (max-width: 575px) {
   * {
     font-size: 10px;
+  }
+  .header_title h1 {
+    font-size: 42px;
+  }
+  .header_title p {
+    font-size: 19px;
+    font-style: italic;
   }
 }
 
