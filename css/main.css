@@ -96,6 +96,11 @@ footer {
     font-size: 1.8rem;
   }
 }
+@media (min-width: 1200px) and (max-width: 1800px) {
+  a.nav-link {
+    font-size: 0.7rem;
+  }
+}
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 768px) {
